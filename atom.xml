@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>牛牛記記</title>
+  
+  
+  <link href="https://iangwen112.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://iangwen112.github.io/"/>
+  <updated>2020-12-13T09:43:10.303Z</updated>
+  <id>https://iangwen112.github.io/</id>
+  
+  <author>
+    <name>牛牛</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小米手機4刷機Android 10</title>
+    <link href="https://iangwen112.github.io/2020/12/09/xiaomi-to-lineage/"/>
+    <id>https://iangwen112.github.io/2020/12/09/xiaomi-to-lineage/</id>
+    <published>2020-12-09T11:08:29.000Z</published>
+    <updated>2020-12-13T09:43:10.303Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;p&gt;上一篇提到今年雙11我換電信公司另外加辦一個公司用的門號。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;參閱：&lt;a href=&quot;https://iangwen112.github.io/2020/11/28/I-Changed-Mobile-Operator/&quot;&gt;我的手機資費越來越便宜了&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因為該門號本來想用我目前用的HTC U11+雙卡雙待，結果安裝的時候發現，&lt;br&gt;若要雙卡雙待就會無法使用記憶卡(第二張卡跟記憶卡是相同卡槽只能擇一)，&lt;br&gt;只好從家人那邊拿了一台沒在用的手機，也就是小米手機4。&lt;br&gt;自從今年疫情以來看了許多國際新聞，包括港版國安法施行，美國打壓華為5G…等等的新聞，加上查了NCC下面這篇新聞稿：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活記事" scheme="https://iangwen112.github.io/categories/%E7%94%9F%E6%B4%BB%E8%A8%98%E4%BA%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我的手機資費越來越便宜了</title>
+    <link href="https://iangwen112.github.io/2020/11/28/I-Changed-Mobile-Operator/"/>
+    <id>https://iangwen112.github.io/2020/11/28/I-Changed-Mobile-Operator/</id>
+    <published>2020-11-28T11:11:22.000Z</published>
+    <updated>2020-11-27T22:49:05.406Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;台哥大時期&quot;&gt;&lt;a href=&quot;#台哥大時期&quot; class=&quot;headerlink&quot; title=&quot;台哥大時期&quot;&gt;&lt;/a&gt;台哥大時期&lt;/h2&gt;&lt;p&gt;好久好久以前我還18歲的時候，當時還是在智慧型手機開始流行以前的智障型手機時期，手機都還只是拿來打電話跟傳簡訊。我那時候年輕不懂事，被通訊行的人說服，一次辦了五個台灣大哥大門號，當時的方案好像是：一個主門號200元型的月租，另外四個是無月租的還送兩百元的通話費，超過補差額，然後可以搭配一台不知道幾千元的手機吧。於是我就開始了每次打差不多時間的電話就要換SIM卡的日子了．．．這樣的日子想當然過了一陣子就會覺得很麻煩，最後合約到了之後學聰明了，寧可辦資費比較高的也不要因為貪小便宜而去辦這種方案，於是我就把五個門號中的主門號用較高資費的台哥大又繼續用了好一段時間(剩的四個號碼直接停掉)…直到某年(2002年？)某天在網路上看到中華電信有比較便宜的資費，而且覺得中華的訊號應該會更好，就越來越覺得台哥大的資費好貴喔～於是我就停掉了這個也用了幾年的台哥大號碼，直接辦了一個新的中華電信號碼，而這個號碼也一直用到現在了。(不知道當時為何不攜碼，可能那時還不能攜碼？ 還是覺得攜碼很麻煩？ 還是覺得自己是邊緣人，號碼換了也沒差？)&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活記事" scheme="https://iangwen112.github.io/categories/%E7%94%9F%E6%B4%BB%E8%A8%98%E4%BA%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何架設Blog</title>
+    <link href="https://iangwen112.github.io/2020/11/15/how-I-start-blog/"/>
+    <id>https://iangwen112.github.io/2020/11/15/how-I-start-blog/</id>
+    <published>2020-11-15T14:29:16.000Z</published>
+    <updated>2020-11-16T10:54:10.545Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;使用工具&quot;&gt;&lt;a href=&quot;#使用工具&quot; class=&quot;headerlink&quot; title=&quot;使用工具&quot;&gt;&lt;/a&gt;使用工具&lt;/h2&gt;&lt;p&gt;我使用以下工具完成架設Blog：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術相關" scheme="https://iangwen112.github.io/categories/%E6%8A%80%E8%A1%93%E7%9B%B8%E9%97%9C/"/>
+    
+    
+    <category term="Hexo" scheme="https://iangwen112.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://iangwen112.github.io/2020/11/14/hello-world/"/>
+    <id>https://iangwen112.github.io/2020/11/14/hello-world/</id>
+    <published>2020-11-14T14:29:16.000Z</published>
+    <updated>2021-02-14T12:27:55.443Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;執行步驟&quot;&gt;&lt;a href=&quot;#執行步驟&quot; class=&quot;headerlink&quot; title=&quot;執行步驟&quot;&gt;&lt;/a&gt;執行步驟&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;1.  建立新文章
+2.  開始編寫上一步驟產出的md檔(使用markdown語言)
+3.  產生靜態網頁
+4.  啟動本機服務(預覽看看有沒有要再改的)
+5.  佈署至遠端主機
+    (佈署到GitHub Pages後，當網頁重整後還是未生效時，可能是主機端還在跑，要等一陣子再重整看看)
+&lt;/code&gt;&lt;/pre&gt;</summary>
+    
+    
+    
+    <category term="技術相關" scheme="https://iangwen112.github.io/categories/%E6%8A%80%E8%A1%93%E7%9B%B8%E9%97%9C/"/>
+    
+    
+    <category term="Hexo" scheme="https://iangwen112.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>

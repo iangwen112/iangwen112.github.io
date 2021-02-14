@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>小米手機4刷機Android 10</title>
+    <url>/2020/12/09/xiaomi-to-lineage/</url>
+    <content><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>上一篇提到今年雙11我換電信公司另外加辦一個公司用的門號。</p>
+<blockquote>
+<p>參閱：<a href="https://iangwen112.github.io/2020/11/28/I-Changed-Mobile-Operator/">我的手機資費越來越便宜了</a></p>
+</blockquote>
+<p>因為該門號本來想用我目前用的HTC U11+雙卡雙待，結果安裝的時候發現，<br>若要雙卡雙待就會無法使用記憶卡(第二張卡跟記憶卡是相同卡槽只能擇一)，<br>只好從家人那邊拿了一台沒在用的手機，也就是小米手機4。<br>自從今年疫情以來看了許多國際新聞，包括港版國安法施行，美國打壓華為5G…等等的新聞，加上查了NCC下面這篇新聞稿：</p>
+<a id="more"></a>
+
+<blockquote>
+<p><img src="/photos/20201209-1.png" alt="NCC新聞稿" title="NCC新聞稿"></p>
+</blockquote>
+<p>老實說即便是幾年前的舊產品，台灣也有許多人用，但對於中國的電信產品，還是覺得有點怕怕的，因為也不知道背景會上傳什麼。<br>於是一開始先在手機上安裝”防火牆無Root”這款App，但用了一陣子後，除了覺得每次要允許連線很麻煩外，<br>它在Android作業系統上還是有綁定自家MIUI的相關程式，不知道它在背景做什麼事，<br>會不會那天”防火牆無Root”不小心關到或更新後沒有自動啟動，就又一次全部上傳了?<br>因此覺得還是能不用手機出廠時的作業系統就不用，看能不能將手機刷機不要有MIUI的Android原生系統。<br>以下就是我所參考如何刷機的方式。</p>
+<h2 id="參考影片"><a href="#參考影片" class="headerlink" title="參考影片"></a>參考影片</h2><blockquote>
+<p><a href="https://www.bilibili.com/video/av93792920/">https://www.bilibili.com/video/av93792920/</a><br><a href="https://www.bilibili.com/video/av65514235/">https://www.bilibili.com/video/av65514235/</a></p>
+</blockquote>
+<h2 id="參考網站"><a href="#參考網站" class="headerlink" title="參考網站"></a>參考網站</h2><blockquote>
+<p><a href="https://www.moonlol.com/adb-fastboot%E5%B7%A5%E5%85%B7%E7%B7%9A%E5%88%B7twrp-recovery-5954.html">https://www.moonlol.com/adb-fastboot%E5%B7%A5%E5%85%B7%E7%B7%9A%E5%88%B7twrp-recovery-5954.html</a><br><a href="https://lineageos.org/">https://lineageos.org/</a><br><a href="https://download.lineageos.org/">https://download.lineageos.org/</a><br><a href="https://forum.xda-developers.com/t/rom-unofficial-cancro-10-lineageos-17-1.4073881/">https://forum.xda-developers.com/t/rom-unofficial-cancro-10-lineageos-17-1.4073881/</a><br><a href="https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165/">https://forum.xda-developers.com/t/custom-gapps-bitgapps-for-android.4012165/</a><br><a href="https://opengapps.org/">https://opengapps.org/</a><br><a href="https://www.twblogs.net/a/5c84186bbd9eee35cd69ce4a">https://www.twblogs.net/a/5c84186bbd9eee35cd69ce4a</a></p>
+</blockquote>
+<h2 id="下載相關驅動、工具及安裝ROM包"><a href="#下載相關驅動、工具及安裝ROM包" class="headerlink" title="下載相關驅動、工具及安裝ROM包"></a>下載相關驅動、工具及安裝ROM包</h2><h3 id="最新版第三方Recovery工具TWRP"><a href="#最新版第三方Recovery工具TWRP" class="headerlink" title="最新版第三方Recovery工具TWRP"></a>最新版第三方Recovery工具TWRP</h3><blockquote>
+<p>twrp-3.4.0-0-cancro.img(小米手機4手機代號為cancro)</p>
+</blockquote>
+<h3 id="ADB刷機工具"><a href="#ADB刷機工具" class="headerlink" title="ADB刷機工具"></a>ADB刷機工具</h3><blockquote>
+<p>platform-tools_r30.0.5-windows.zip</p>
+</blockquote>
+<h3 id="USB驅動程式"><a href="#USB驅動程式" class="headerlink" title="USB驅動程式"></a>USB驅動程式</h3><blockquote>
+<p>latest_usb_driver_windows.zip (Android最新USB驅動程式)<br>xiaomi_usb_driver.rar (XiaoMi的USB驅動程式)</p>
+</blockquote>
+<h3 id="安裝ROM包-LINEAGE、GAPPS"><a href="#安裝ROM包-LINEAGE、GAPPS" class="headerlink" title="安裝ROM包(LINEAGE、GAPPS)"></a>安裝ROM包(LINEAGE、GAPPS)</h3><blockquote>
+<p>lineage-17.1-20200417-UNOFFICIAL-cancro.zip(小米手機4手機代號為cancro)<br>open_gapps-arm-10.0-pico-20201203.zip(Google的Gapps只下載核心的pico版本就好)</p>
+</blockquote>
+<h2 id="步驟及指令"><a href="#步驟及指令" class="headerlink" title="步驟及指令"></a>步驟及指令</h2><h3 id="安裝第三方Recovery工具TWRP至手機"><a href="#安裝第三方Recovery工具TWRP至手機" class="headerlink" title="安裝第三方Recovery工具TWRP至手機"></a>安裝第三方Recovery工具TWRP至手機</h3><ol>
+<li>twrp-3.4.0-0-cancro.img放至platform-tools目錄內</li>
+<li>在platform-tools目錄內按shift+右鍵開啟PowerShell後執行cmd</li>
+<li>手機-&gt;設定-&gt;開啟開發人員選項-&gt;開啟USB偵錯(Android調試、偵錯通知)</li>
+<li>用USB線連接電腦與手機，手機開啟檔案傳輸</li>
+<li>電腦若偵測到新裝置需安裝驅動程式時，將驅動程式路徑指到USB驅動程式解壓後的目錄讓作業系統自己尋找安裝</li>
+<li>開啟裝置的FASTBOOT模式<blockquote>
+<p>執行adb reboot bootloader或手機關機後同時按住「電源、音量-」開機直到出現FASTBOOT畫面</p>
+</blockquote>
+</li>
+<li>測試電腦是否正確連到手機，在cmd中執行<blockquote>
+<p>fastboot devices (執行後有出現代碼代表成功)</p>
+</blockquote>
+</li>
+<li>可能是國際版手機的關係，預設就已經解鎖(不需輸入解鎖碼)，不用執行也可<blockquote>
+<p>fastboot oem unlock</p>
+</blockquote>
+</li>
+<li>刷入符合手機型號的twrp recovery .img檔，在cmd中執行<blockquote>
+<p>fastboot flash recovery twrp-3.4.0-0-cancro.img (若成功會顯示OKAY)</p>
+</blockquote>
+</li>
+<li>手機關機，同時按住「電源、音量+」直到TWRP(Team Win Recovery Project)介面出現為止<br>(若來不及按導致原本MIUI系統重啟，就要重新執行上述4~7點)</li>
+</ol>
+<h3 id="安裝ROM包-LINEAGE、GAPPS-1"><a href="#安裝ROM包-LINEAGE、GAPPS-1" class="headerlink" title="安裝ROM包(LINEAGE、GAPPS)"></a>安裝ROM包(LINEAGE、GAPPS)</h3><ol>
+<li>手機TWRP主畫面中-&gt;wipe-&gt;advince wipe-&gt;勾選data、cache、dalvik cache、system-&gt;swipe to wipe</li>
+<li>電腦上將安裝ROM包(LINEAGE、GAPPS)zip檔複製到手機目錄中</li>
+<li>手機TWRP主畫面中-&gt;install-&gt;加入LINEAGE的zip包-&gt;add more zip-&gt;加入GAPPS的zip包-&gt;install<br>(建議LINEAGE跟GAPPS一起安裝後再重啟比較不會有問題)</li>
+<li>安裝正常結束時不會有紅色錯誤訊息-&gt;reboot-&gt;don’t install</li>
+<li>重啟後若出現LINEAGE開機畫面及後續Google設定程序即代表成功</li>
+</ol>
+<h3 id="安裝後調整"><a href="#安裝後調整" class="headerlink" title="安裝後調整"></a>安裝後調整</h3><ol>
+<li>安裝平時需要的app上去後，覺得有變慢，因此再做一些調整，如：<ol>
+<li>電池：<blockquote>
+<p>省電與效能-&gt;效能<br>節約耗電量-&gt;開啟</p>
+</blockquote>
+</li>
+<li>開發人員選項：<blockquote>
+<p>自動系統更新-&gt;關閉<br>系統追蹤-&gt;追踨可偵錯的應用程式-&gt;關閉<br>Wifi掃描調節-&gt;開啟<br>視窗動畫比例、轉場動畫比例、動畫影片長度比例-&gt;關閉動畫<br>返回鍵可終止應用程式-&gt;開啟<br>應用程式背景處理程序限制-&gt;最多一個處理程序<br>自動填入記錄層級-&gt;關閉、每個工作階段的要求數上限-&gt;5</p>
+</blockquote>
+</li>
+<li>安裝Boost+：<blockquote>
+<p>開啟智慧加速、垃圾清理</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>手機放一天就沒電了，需要再調整，如：<ol>
+<li>帳戶：<blockquote>
+<p>同步處理-&gt;關閉</p>
+</blockquote>
+</li>
+<li>應用程式和通知：<blockquote>
+<p>特殊應用程式存取權-&gt;電池效能最佳化<br>Live Display-&gt;降低耗電-&gt;開啟</p>
+</blockquote>
+</li>
+<li>定位服務：關閉</li>
+</ol>
+</li>
+</ol>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><ol>
+<li>跟我平時用習慣HTC手機的Android介面幾乎一樣很原生，也有Google相關app，用起來安心多了</li>
+<li>我人生第一次刷機照網路做竟然成功了(心臟很大顆)，小米手機4國際版還真好刷，途中失敗幾次重做後也沒變磚</li>
+<li>現在用的主手機HTC U11+最多也只能升到Android 9，小米手機4更早出竟然可以裝到Android 10，Android好棒棒</li>
+<li>刷完後只安裝會用到的app，雖然比平常用的手機慢，但調整完後仍可以正常收信、上網、看YouTube</li>
+<li>總之這手機拿來當上班手機還算ok，雖然偶爾還是會卡，但還算滿意!</li>
+</ol>
+]]></content>
+      <categories>
+        <category>生活記事</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>我的手機資費越來越便宜了</title>
+    <url>/2020/11/28/I-Changed-Mobile-Operator/</url>
+    <content><![CDATA[<h2 id="台哥大時期"><a href="#台哥大時期" class="headerlink" title="台哥大時期"></a>台哥大時期</h2><p>好久好久以前我還18歲的時候，當時還是在智慧型手機開始流行以前的智障型手機時期，手機都還只是拿來打電話跟傳簡訊。我那時候年輕不懂事，被通訊行的人說服，一次辦了五個台灣大哥大門號，當時的方案好像是：一個主門號200元型的月租，另外四個是無月租的還送兩百元的通話費，超過補差額，然後可以搭配一台不知道幾千元的手機吧。於是我就開始了每次打差不多時間的電話就要換SIM卡的日子了．．．這樣的日子想當然過了一陣子就會覺得很麻煩，最後合約到了之後學聰明了，寧可辦資費比較高的也不要因為貪小便宜而去辦這種方案，於是我就把五個門號中的主門號用較高資費的台哥大又繼續用了好一段時間(剩的四個號碼直接停掉)…直到某年(2002年？)某天在網路上看到中華電信有比較便宜的資費，而且覺得中華的訊號應該會更好，就越來越覺得台哥大的資費好貴喔～於是我就停掉了這個也用了幾年的台哥大號碼，直接辦了一個新的中華電信號碼，而這個號碼也一直用到現在了。(不知道當時為何不攜碼，可能那時還不能攜碼？ 還是覺得攜碼很麻煩？ 還是覺得自己是邊緣人，號碼換了也沒差？)</p>
+<a id="more"></a>
+
+<h2 id="中華電信時期"><a href="#中華電信時期" class="headerlink" title="中華電信時期"></a>中華電信時期</h2><p>換了中華電信之後就覺得這個決定是對的，身邊比較多人用可以走網內通話比較便宜、在地下室及偏僻的地方訊號也蠻穩的。我從當兵2G時代就開始用了，當時的資費已經忘了。3G時代開始，2012年我用預付綁手機方案搭配”大家講289型”(每月1千多元)，但畢竟這樣荷包有點傷，合約到期後即改為較便宜的183型(每月3、4百元)，這些方案的撥打量在當時也已足夠使用。接著4G上網時代來了，2014年後半合約到期，改辦限量上網的636型大省方案(第一年每月333元，後續每月443元)，2017年初合約到期後，各家電信上網吃到飽大戰開始，趁機趕緊搶一波699元吃到飽；然後時間來到2018年5月所謂的母親節之亂，吃到飽只要499元，大家搶翻天了，我們家附近的中華電信也是大排長龍，我算了一下就算提前解約也划算，於是也跟風搶辦。</p>
+<p><img src="/photos/20201128/20201128-1.jpg" alt="母親節499之亂" title="母親節499之亂"></p>
+<blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/499%E5%90%83%E5%88%B0%E9%A3%BD%E4%B9%8B%E4%BA%82">499吃到飽之亂 - 維基百科，自由的百科全書 (wikipedia.org)</a></p>
+</blockquote>
+<p>就這樣用了30個月來到今年雙11，我的合約就將到期了！在到期前幾個月就不斷有中華電信簡訊通知續約、促銷人員也打來三四次問我要不要電話上直接續約？有$499跟$599二種方案31個月上網吃到飽。通話的部份，以前的$499是網內吃到飽，網外及室話各90分鐘，現在變成$599了；而現在的$499則降為網內每通前5分鐘+45分鐘免費，網外及室話則只剩40分鐘。其實通話的部份變少對我而言是沒差，因為有網路吃到飽後我跟朋友家人同事幾乎都是用網路通訊軟體聯絡，也很少打語音電話；電話幾乎都是拿來收二階段驗證簡訊或是電商銀行廣告之類的。但我開始在想：家裡跟公司都有WiFi我還需要上網吃到飽嗎？還是我要辦限量降速的？ 或是我辦限速吃到飽就好？ 另外我想要把工作與生活分開，下一份工作(現在離職休息中)是否提供新門號給公司？於是在我上網看了幾家電信公司是否有CP值較高的方案，加上各家雙11多少有些優惠後，我便決定了！</p>
+<h2 id="LINE-MOBILE雙11優惠-攜碼"><a href="#LINE-MOBILE雙11優惠-攜碼" class="headerlink" title="LINE MOBILE雙11優惠(攜碼)"></a>LINE MOBILE雙11優惠(攜碼)</h2><p>首先依照我目前的習慣，通話費沒優惠也沒關係反正也不常用，在什麼都要連網的時代有網路相對還比較重要，吃不飽總是令人害怕，會擔心出門在外手機沒有網路又沒有免費WiFi可以連就很麻煩。再來是我查了網路很多人的心得是10mb、21mb的限速吃到飽根本就已經很夠用了，LINE MOBILE的10mb網速可以正常看YouTube還不太累格(我家訊號不錯測1080p都還ok)。然後我就在10mb、21mb之間掙扎，最後還是選了10mb的每月只要$111。</p>
+<table style="border:none;border-collapse:collapse;cellspacing=0;cellpadding=0">
+<tr>
+<td style="border: none;">
+
+<p><img src="/photos/20201128/20201128-2.png" alt="LINEMOBILE雙11方案111" title="LINEMOBILE雙11方案111"></p>
+</td>
+<td style="border: none;">
+
+<p><img src="/photos/20201128/20201128-3.png" alt="LINEMOBILE雙11方案211" title="LINEMOBILE雙11方案211"></p>
+</td>
+</tr>
+</table>
+
+<p>其實$211的方案會有每月帳單回饋11%，用LINE POINTS折抵後每月其實也只要$188。網外及室話每月是30及40分鐘免費，但是我就是用不到通話，就很不想多繳那$77元，一年下來也要快1千元。而且就算後來真的不夠用，每年續約時還是可以改成較高資費，所以就先用較低的方案用看看再說。</p>
+<p><img src="/photos/20201128/20201128-4.png" alt="LINEMOBILE雙11方案111注意事項" title="LINEMOBILE雙11方案111注意事項"></p>
+<p>LINE MOBILE其實就是遠傳電信來著，今年是11/10、11/11二天分三個時段：12～14、17～19、20～22開放申請，我其實11/10就已搶到$211的，後來考慮後決定改$111方案。隔天去電客服問看能不能直接幫我改方案就好？結果果然是沒辦法，攜碼因為是同一門號要先退掉才能申請別的方案，但退掉後能不能再搶到$111還有沒有名額他們也看不到，要我自己考慮看看(懷疑是話術？)。一開始很怕退掉$211會搶不到$111，因為上面說只有500名，結果好像也不太用搶，因為我11/11下午請客服退掉$211後，在時段內有搶到可以選擇$111但輸入後跳出同門號已經申請過了，去電客服說要晚一點再試看看或隔天會發一個保留資格的連結讓我可以進去補單，結果我在23～24點緊急加開的那一場再申請一次就過了(系統解鎖了?)，隔天連結也LINE給我了但已經沒差了，還是去電客服確認申請有成功。問客服說我什麼時候會拿到卡，他們說大概20號左右，拿到卡可以請他們開通。於是等阿等果然20號送來了，立馬打給客服請他們開通，因為攜出攜入開通需要一些時間，原本系統預訂是26、27號，既然已經收到卡了，客服說現在幫我申請最快可以23、24號開通，又等了三天後，於是在24號正式開通了。一開通就馬上測速並看一下YouTube，果然如網路上所說，前600mb的網速是21mb，超過就降速成10MB，經過這幾天的測試後覺得跟以前比較來反應速度好像有慢一點點，整體還是蠻順的，說真的這價錢能有這樣的表現我已經很滿意了～</p>
+<h2 id="亞太雙11優惠-新申辦"><a href="#亞太雙11優惠-新申辦" class="headerlink" title="亞太雙11優惠(新申辦)"></a>亞太雙11優惠(新申辦)</h2><p>在我考慮要把工作門號與生活門號分開的時候，也順便看了一下是否有那種跟預付卡差不多的方案可以不用綁約的，結果看到亞太的雙11真的有夠便宜又不用綁約。預付卡的話每半年就要儲值一次以維持合約覺得有點麻煩。我知道網路上大家在講亞太一生一定要辦一次的梗，ptt跟mobile01也在人在說亞太雙11真的就只值$11，看來是真的用得很氣，可是這方案實在太誘人了，而且聽說這個「不綁約月租$11彈性飆網」方案也是最後一次了～看官網我們家有在基地台範圍內，而且離雙11只剩二天，想辦試用也來不及了，反正蠻便宜的就賭賭看吧…</p>
+<p><img src="/photos/20201128/20201128-5.png" alt="亞太雙11方案" title="亞太雙11方案"></p>
+<p><img src="/photos/20201128/20201128-6.png" alt="亞太雙11方案11" title="亞太雙11方案11"></p>
+<p>其實我也沒有要拿來當主要門號，而是用來提供給公司聯絡用的，以我的工作性質就算訊號不好也沒差，平常都坐辦公室真的很少會打我手機，跟同事也是用通訊軟體會比較多，限量1GB後降速應該也是夠了，反正平常開著WiFi不要亂耗流量就好。</p>
+<p><img src="/photos/20201128/20201128-7.png" alt="亞太雙11方案11貼心叮嚀" title="亞太雙11方案11貼心叮嚀"></p>
+<p>這次活動有二場，第一場11/6早鳥場12:00-20:00，那時還不知道有這件事。第二場是11/11是主場11:00-20:00，說是限量我11點一到馬上抽就有，好像沒人搶一樣也是超順利，11/18傍晚收到卡片，晚上10點就開通了。家裡訊號滿格，立馬測速看看，下載18mb上傳2mb，真是超出我的預期，至於我常去的地方有沒有訊號就待時間慢慢驗證了。</p>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>這次攜碼遠傳每月$111+新申辦亞太每月$11，每個月手機費用從原本$499變成$122，而且目前使用上沒什麼影響。真的覺得還好我有看到這些方案也都有搶到了，棒棒！中華電信促銷人員在我辦完攜碼生效前最後一次打來推銷時，我直接告訴他說我已經辦攜碼了，他好奇的問我原因，攜到哪？方案是什麼？我一五一十的告訴他，結果對方超驚訝現在還有這種方案，說早知道有就幫他小朋友也辦這種了…呵呵～看來是外包？</p>
+]]></content>
+      <categories>
+        <category>生活記事</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>如何架設Blog</title>
+    <url>/2020/11/15/how-I-start-blog/</url>
+    <content><![CDATA[<h2 id="使用工具"><a href="#使用工具" class="headerlink" title="使用工具"></a>使用工具</h2><p>我使用以下工具完成架設Blog：</p>
+<a id="more"></a>
+
+<blockquote>
+<p>Hexo - 一個免費Blog架構</p>
+<p>Ocean - 一種套用在Hexo上的主題(還有其他主題請參考Hexo網站)</p>
+<p>GitHub/GitHub Pages - 存放及部署Blog程式、文章、圖片等資料的地方</p>
+<p>Visual Studio Code - 用來設定程式、寫作，支援markdown preview</p>
+<p>Typora - 專門寫markdown文件的編輯器  </p>
+</blockquote>
+<br />
+
+<h2 id="參考網站"><a href="#參考網站" class="headerlink" title="參考網站"></a>參考網站</h2><p>網路上可以找到很多免費架設Blog的文章，我主要參考以下網站：</p>
+<blockquote>
+<p>搭建個人博客最好的程序, 完全免費開源! 2020 | 零度解說 - <a href="https://youtu.be/AvBaIiBuPI0">https://youtu.be/AvBaIiBuPI0</a></p>
+<p>Hexo安裝教程 - <a href="https://bit.ly/36ati7m">https://bit.ly/36ati7m</a></p>
+<p>數學家 - <a href="https://zhwangart.github.io/">https://zhwangart.github.io/</a></p>
+<p>Markdown Language - <a href="https://markdownlivepreview.com/">https://markdownlivepreview.com/</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>技術相關</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/11/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="執行步驟"><a href="#執行步驟" class="headerlink" title="執行步驟"></a>執行步驟</h2><pre><code>1.  建立新文章
+2.  開始編寫上一步驟產出的md檔(使用markdown語言)
+3.  產生靜態網頁
+4.  啟動本機服務(預覽看看有沒有要再改的)
+5.  佈署至遠端主機
+    (佈署到GitHub Pages後，當網頁重整後還是未生效時，可能是主機端還在跑，要等一陣子再重整看看)
+</code></pre>
+<a id="more"></a>
+
+<hr>
+<h2 id="執行語法"><a href="#執行語法" class="headerlink" title="執行語法"></a>執行語法</h2><h3 id="建立新文章-預設Layout為post時"><a href="#建立新文章-預設Layout為post時" class="headerlink" title="建立新文章 (預設Layout為post時)"></a>建立新文章 (預設Layout為post時)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<hr>
+<h3 id="清除靜態網頁-Option"><a href="#清除靜態網頁-Option" class="headerlink" title="清除靜態網頁 (Option)"></a>清除靜態網頁 (Option)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="產生靜態網頁"><a href="#產生靜態網頁" class="headerlink" title="產生靜態網頁"></a>產生靜態網頁</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<hr>
+<h3 id="啟動本機服務"><a href="#啟動本機服務" class="headerlink" title="啟動本機服務"></a>啟動本機服務</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<hr>
+<h3 id="佈署至遠端主機"><a href="#佈署至遠端主機" class="headerlink" title="佈署至遠端主機"></a>佈署至遠端主機</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>技術相關</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+</search>
